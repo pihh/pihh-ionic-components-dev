@@ -1,0 +1,12 @@
+ion-toolbar {
+  ion-title {
+    text-align: left;
+    margin-left: -2rem;
+  }
+}
+
+.pc-ion-header--sub-page {
+  position: sticky;
+  top: 0;
+  background: var(--background);
+}

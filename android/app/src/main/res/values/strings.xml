@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">pihh-components</string>
+    <string name="title_activity_main">pihh-components</string>
+    <string name="package_name">com.pihh.components</string>
+    <string name="custom_url_scheme">com.pihh.components</string>
+</resources>

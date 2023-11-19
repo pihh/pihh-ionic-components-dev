@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border pc-ion-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon
+          slot="icon-only"
+          name="globe-outline"
+          class="pc-ion-icon-small"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon
+          slot="icon-only"
+          name="logo-instagram"
+          class="pc-ion-icon-small"
+        ></ion-icon>
+      </ion-button>
+      <ion-button (click)="navigateSettings()">
+        <app-icon-menu-double></app-icon-menu-double>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-label>
+        <h2>Heading</h2>
+        <p>Paragraph</p>
+
+          <small>Small</small>
+
+      </ion-label>
+      <ion-avatar aria-hidden="true" slot="end" class="pc-ion-header--user-avatar">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>

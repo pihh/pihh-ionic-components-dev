@@ -1,0 +1,27 @@
+<div
+  class="pc-searchbar--container"
+  [class.pc-searchbar--container--expanded]="expanded"
+
+>
+  <div class="pc-searchbar--wrapper">
+    <div class="pc-searchbar--wrapper--title-container"  (transitionend)="onTransitionEnd()">
+      <ion-list-header>
+        <ion-label>Pesquisar</ion-label>
+      </ion-list-header>
+    </div>
+    <div class="pc-searchbar--search-wrapper">
+      <span class="pc-searchbar--wrapper--icon-container" (click)="shrink()">
+        <!-- <ion-icon slot="icon-only" name="arrow-back-sharp"></ion-icon> -->
+        <app-icon-back></app-icon-back>
+      </span>
+      <ion-searchbar
+        show-clear-button="focus"
+        placeholder="Pesquisa"
+        clear-icon="close-outline"
+        (ionFocus)="expand()"
+      ></ion-searchbar>
+    </div>
+  </div>
+</div>
+
+<app-icon-loading [isShowing]="isLoadingShowing"> </app-icon-loading>

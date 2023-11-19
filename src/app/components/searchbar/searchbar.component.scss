@@ -1,0 +1,69 @@
+$transition: var(--pc-animation-transition-fast);
+$titleContainerSize: 4rem;
+
+.pc-searchbar--container{
+  transition: $transition;
+  .pc-searchbar--wrapper--title-container{
+    transition: $transition;
+    max-height: 0rem;
+    opacity: 0;
+    overflow: hidden;
+    ion-label{
+      transition: $transition;
+      transform:translateY(-2rem);
+      margin-top: 1rem;
+    }
+  }
+  .pc-searchbar--wrapper{
+    .pc-searchbar--wrapper--icon-container{
+      transition: $transition;
+      margin-left: 8px;
+      max-width: 30px;
+      display: block;
+      overflow: hidden;
+      ion-icon{
+        font-size: var(--pc-ion-icon-size);
+      }
+    }
+    .pc-searchbar--search-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &.pc-searchbar--container--expanded{
+    .pc-searchbar--wrapper--title-container{
+      max-height: $titleContainerSize;
+      opacity: 1;
+    }
+    .pc-searchbar--wrapper--icon-container{
+      max-width: 0;
+      margin: 0;
+    }
+  }
+}
+
+.pc-searchbar--container--expanded{
+  .pc-searchbar--wrapper--title-container{
+    max-height: $titleContainerSize;
+    opacity: 1;
+    ion-label{
+      transform:translateY(0px)
+    }
+  }
+  .pc-searchbar--wrapper{
+
+    .pc-searchbar--wrapper--icon-container{
+      max-width: 0;
+      margin-left: 0;
+    }
+
+  }
+}
+
+ion-searchbar{
+  --background: var(--pc-ion-searchbar-background);
+}
+
+
+

@@ -1,0 +1,17 @@
+<ion-header class="ion-no-border pc-ion-header pc-ion-header--sub-page">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+        <app-button-back></app-button-back>
+        <ng-content select="[buttons-start]"></ng-content>
+    </ion-buttons>
+    <ion-title>
+      <ng-content></ng-content>
+
+
+    </ion-title>
+    <ion-buttons slot="end">
+      <ng-content select="[buttons-end]"></ng-content>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

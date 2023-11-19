@@ -1,0 +1,23 @@
+.pc-ion-header{
+  background: var(--ion-background-color);
+  ion-toolbar{
+    --background: var(--ion-background-color);
+  }
+  h1,h2,h3{
+    font-weight: bold;
+  }
+  small{
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.4);
+
+  }
+  p{
+    color: var(--ion-color-dark);
+  }
+  .pc-ion-header--user-avatar{
+    height: 55px;
+    width: 55px;
+    margin-right: -8px;
+    padding-right: 0;
+  }
+
+}

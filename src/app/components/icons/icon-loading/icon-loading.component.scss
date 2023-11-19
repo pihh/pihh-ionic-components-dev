@@ -1,0 +1,30 @@
+$wrapperSize: 2rem;
+$iconSize: 1rem;
+.icon-loading--container {
+  transition: var(--pc-animation-transition-fast);
+  max-height: 0px;
+  opacity: 0;
+
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .icon-loading--wrapper {
+    border: 1px solid var(--ion-color-medium-tint);
+    width: $wrapperSize;
+    height: $wrapperSize;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ion-spinner {
+      height: $iconSize;
+    }
+  }
+}
+
+.icon-loading--container.icon-loading--container--expanded{
+  max-height: $wrapperSize;
+  opacity: 1;
+}
