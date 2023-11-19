@@ -1,0 +1,29 @@
+<!--
+<div>
+
+  <div
+  class="pc-image-expand--wrapper"
+  #wrapper
+  [class.pc-image-expand--wrapper--expanded]="isExpanded"
+  >
+  <div class="pc-image-expand--background" #background></div>
+
+  <div class="pc-image-expanded--button">
+    <div (click)="toggle()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+</div>
+  <img [alt]="alt" [src]="src" (click)="toggle()" class="pc-image-expand" />
+</div>
+
+-->
+<div class="image-expand--wrapper" #wrapper>
+  <div class="image-expand--background" #background (click)="toggle($event)">
+    <div class="image-expand--button" (click)="toggle($event)" #button [class.show]="isExpanded">
+      <ion-icon name="close-outline" color="danger"></ion-icon>
+    </div>
+  </div>
+  <img [alt]="alt" [src]="src" (click)="toggle($event)" class="pc-image-expand" #image/>
+</div>

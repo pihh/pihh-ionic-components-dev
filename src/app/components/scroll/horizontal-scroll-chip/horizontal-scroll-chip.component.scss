@@ -1,0 +1,7 @@
+ion-chip{
+  border-radius: 8px;
+  &.selected{
+    --background: var(--ion-color-dark);
+    --color:var(--ion-color-dark-contrast);
+  }
+}

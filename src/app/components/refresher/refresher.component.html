@@ -1,0 +1,26 @@
+<div class="ion-refresher--container">
+  <ion-refresher
+    (ionStart)="onIonRefreshStart($event)"
+    (ionRefresh)="onIonRefresh($event)"
+    (ionPull)="onIonRefreshPull($event)"
+    [pullFactor]="0.5"
+    slot="fixed"
+  >
+    <!-- [pullMin]="100"
+    [pullMax]="200" -->
+
+    <!-- [textContent]="progress" -->
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      [pullingText]="'Pull to refresh ' + progress"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..."
+    >
+      <app-icon-logo-progress [progress]="progress"></app-icon-logo-progress>
+    </ion-refresher-content>
+  </ion-refresher>
+
+
+
+
+</div>

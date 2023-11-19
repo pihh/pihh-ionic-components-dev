@@ -1,0 +1,32 @@
+ion-card{
+  margin-left: 8px;
+
+}
+.pc-card-event--inline {
+
+  display: inline-grid;
+  width: 80vw;
+  gap: 1em;
+  margin-right: 1rem;
+  margin-left: 8px;
+  ion-card{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.pc-card-event--body{
+  padding-bottom: 0.25em;
+}
+.pc-card-event--footer{
+  padding-top: 0;
+  padding-bottom: 10px;
+  text-align: right;
+
+}
+
+ion-card-header{
+  padding-top:10px;
+  padding-bottom: 0;
+}

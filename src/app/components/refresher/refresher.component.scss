@@ -1,0 +1,11 @@
+.ion-refresher--container {
+  position: relative;
+  margin-top: 0px;
+}
+ion-refresher{
+  transition: opacity 0.15s ease-out;
+  opacity: 1;
+}
+ion-refresher.refresher-completing{
+    opacity: 0;
+}

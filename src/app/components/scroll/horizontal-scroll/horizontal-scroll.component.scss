@@ -1,0 +1,16 @@
+.app-horizontal-scroll{
+  overflow-x: scroll; overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 1em;
+  &::before, &::after{
+    content: "";
+
+  }
+
+  &::before{
+    margin-left: 8px;
+  }
+  &::after{
+    margin-right: 8px;
+  }
+}

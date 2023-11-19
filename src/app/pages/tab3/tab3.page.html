@@ -1,8 +1,40 @@
-<app-header-user></app-header-user>
-
 <ion-content [fullscreen]="true">
-  <ion-searchbar></ion-searchbar>
-  <div style="height: 200dvh" class="ion-padding">
-    <p *ngFor="let x of [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]">xxx</p>
+  <app-page-title> Equipas </app-page-title>
+  <app-horizontal-scroll>
+    <app-horizontal-scroll-chip
+      *ngFor="let category of ['For you', 'Portugal', 'Internacional']; let i = index"
+      [outline]="i !== 0"
+      >{{category}}</app-horizontal-scroll-chip
+    >
+  </app-horizontal-scroll>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Your teams</ion-label>
+    </ion-list-header>
+  </ion-list>
+  <app-horizontal-scroll >
+    <app-card-event *ngFor="let team of [1,2,3]" [inline]="true"></app-card-event>
+  </app-horizontal-scroll>
+  <hr />
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Portugal</ion-label>
+    </ion-list-header>
+  </ion-list>
+  <div class="pc-card--list">
+    <app-card-event *ngFor="let team of [1,2,3]" ></app-card-event>
+  </div>
+
+  <hr />
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Internacional</ion-label>
+    </ion-list-header>
+  </ion-list>
+  <div class="pc-card--list">
+    <app-card-event *ngFor="let team of [1,2,3]" ></app-card-event>
   </div>
 </ion-content>
