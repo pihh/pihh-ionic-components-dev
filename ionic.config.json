@@ -1,0 +1,7 @@
+{
+  "name": "pihh-components",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
