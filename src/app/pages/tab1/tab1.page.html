@@ -6,11 +6,18 @@
       {{test}}
 
     </h1>
-    <p
+    <app-p
       *ngFor="let x of [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; let i = index"
       (click)="navigateToPost(i)"
     >
-      #{{i}} xxx
-    </p>
+      <app-h1>h1 #{{i}}</app-h1>
+      <app-h3>h3 #{{i}}</app-h3>
+      <div>
+        p #{{i}}
+      </div>
+      <app-small>
+        small xxx
+      </app-small>
+    </app-p>
   </div>
 </ion-content>

@@ -1,0 +1,12 @@
+
+<div class="pc-image-background-expand--wrapper" #wrapper (click)="toggle($event)">
+  <div class="pc-image-background-expand--background" #background (click)="toggle($event)">
+    <div class="pc-image-background-expand--button" (click)="toggle($event)" #button [class.pc-image-background-expand--button--showing]="isExpanded">
+      <ion-icon name="close-outline" color="danger"></ion-icon>
+    </div>
+  </div>
+  <div class="pc-image-background-expand--image" #image [style.background-image]="'url(' + src + ')'" [style.minHeight]="minHeight">
+
+  </div>
+  <!-- <img [alt]="alt" [src]="src" (click)="toggle($event)" class="pc-image-background-expand" #image/> -->
+</div>

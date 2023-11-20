@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { AnimationController, Animation } from '@ionic/angular';
 import { wait } from 'src/app/utils/wait';
 
@@ -7,7 +8,7 @@ import { wait } from 'src/app/utils/wait';
   templateUrl: './image-expand.component.html',
   styleUrls: ['./image-expand.component.scss'],
 })
-export class ImageExpandComponent implements OnInit {
+export class ImageExpandComponent implements OnInit , OnDestroy {
   @ViewChild('wrapper') wrapper: any;
   @ViewChild('background') background: any;
   @ViewChild('image') image: any;
@@ -15,14 +16,26 @@ export class ImageExpandComponent implements OnInit {
 
   @Input() alt: string = "Silhouette of mountains"
   @Input() src: string = "https://ionicframework.com/docs/img/demos/card-media.png"
-  constructor(private animationCtrl: AnimationController, private renderer: Renderer2) { }
+  constructor(private animationCtrl: AnimationController, private renderer: Renderer2,private router:Router) {
+    this.router.events.subscribe((ev) => {
+      if (ev instanceof NavigationEnd) {
+        if(this.clone){
+          this.clone.remove()
+        }
+        if(this.isExpanded){
+          this.close()
+        }
+
+      }
+    });
+   }
 
   ngOnInit() { }
 
   public isExpanded = false;
   private isAnimating = false;
 
-  private placeholderElement: any;
+
 
   toggle($event:any) {
     $event.stopPropagation();
@@ -158,7 +171,7 @@ export class ImageExpandComponent implements OnInit {
   }
 
   ngOnDestroy() {
-
+    console.log('onDestroy')
     if(this.clone) {
       this.clone.remove()
     }

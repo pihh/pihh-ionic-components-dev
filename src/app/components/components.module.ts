@@ -15,6 +15,13 @@ import { HorizontalScrollComponent } from './scroll/horizontal-scroll/horizontal
 import { HorizontalScrollChipComponent } from './scroll/horizontal-scroll-chip/horizontal-scroll-chip.component';
 import { CardEventComponent } from './cards/card-event/card-event.component';
 import { ImageExpandComponent } from './images/image-expand/image-expand.component';
+import { H1Component } from './text/h1/h1.component';
+import { H3Component } from './text/h3/h3.component';
+import { PComponent } from './text/p/p.component';
+import { SmallComponent } from './text/small/small.component';
+import { DateTimeAgoComponent } from './date/date-time-ago/date-time-ago.component';
+import { DateComponent } from './date/date/date.component';
+import { ImageBackgroundExpandComponent } from './images/image-background-expand/image-background-expand.component';
 
 const declarations:any[] = [
   // Icons
@@ -25,6 +32,16 @@ const declarations:any[] = [
 
   // Buttons
   ButtonBackComponent,
+
+  // Text
+  H1Component,
+  H3Component,
+  PComponent,
+  SmallComponent,
+
+  // Date
+  DateTimeAgoComponent,
+  DateComponent,
 
   // Header
   HeaderUserComponent,
@@ -42,6 +59,7 @@ const declarations:any[] = [
 
   // Images
   ImageExpandComponent,
+  ImageBackgroundExpandComponent,
 
   // Uncategorized
   SearchbarComponent,

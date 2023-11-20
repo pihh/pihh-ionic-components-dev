@@ -1,0 +1,44 @@
+.pc-image-background-expand--wrapper {
+  position: relative;
+
+  .pc-image-background-expand--image {
+    // Image
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .pc-image-background-expand--background {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    height: 100%;
+    width: 100%;
+
+    .pc-image-background-expand--button {
+      transition: all var(--pc-animation-transition-fast);
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1em;
+      text-align: right;
+      transform: translateX(2rem);
+      &.pc-image-background-expand--button--showing {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &.pc-image-background-expand--expanded{
+    .pc-image-background-expand--background{
+      height: 100dvh;
+      width: 100dvw;
+    }
+  }
+}
