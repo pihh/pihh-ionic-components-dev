@@ -1,0 +1,96 @@
+.pc-CommentDivider {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  width:100%;
+}
+.pc-CommentText {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 12px;
+  display: flex;
+  width:100%;
+}
+.pc-Person {
+  width:100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+}
+.pc-Avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+}
+.pc-NameDate {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  display: inline-flex;
+}
+.pc-JorgeWatson {
+ width: 100%;
+  color: black;
+  font-size: 15px;
+  font-family: SF Pro Text;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.pc-Date {
+ width: 100%;
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 12px;
+  font-family: SF Pro Text;
+  font-weight: 300;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.pc-CommentReply {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  width: calc( 100% - 52px );
+}
+.pc-EumDictaFuissetPhaedrumEi {
+ width: 100%;
+  color: black;
+  font-size: 15px;
+  font-family: SF Pro Text;
+  font-weight: 300;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.pc-Reply {
+ width: 100%;
+  color: #007aff;
+  font-size: 13px;
+  font-family: SF Pro Text;
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+.pc-SeparatorLight68PxLeft {
+  width: calc(100% + 2rem);
+  height: 1px;
+  padding-left: 68px;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+.pc-Divider {
+  width: 100%;
+  height: 0px;
+  // opacity: 0.1;
+  border-bottom: 1px solid var(--ion-toolbar-border-color, var(--ion-border-color, var(--ion-color-step-150, rgba(0, 0, 0, 0.2))));
+}
+
+

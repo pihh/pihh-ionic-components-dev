@@ -1,0 +1,182 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title size="large">My posts</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-avatar style="width: 34px;
+        height: 34px;">
+          <img src="/assets/images/ios-profile-picture.png" />
+        </ion-avatar>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <!-- <app-ios-navigation-large-search>
+    <div id="progress"></div>
+  </app-ios-navigation-large-search> -->
+  <!-- <section id="ios-page-navbar" > -->
+  <!-- </section> -->
+  <main>
+    <a routerLink="/ios-post">
+
+      <section id="ios-page-user-posts">
+        <app-ios-scroll-horizontal>
+          <app-ios-card-squared-small
+          [imageSrc]="'/assets/images/ios-balloon.png'"
+          ></app-ios-card-squared-small>
+          <app-ios-card-squared-small
+          [imageSrc]="'/assets/images/ios-jellyfish.png'"
+        ></app-ios-card-squared-small>
+        <app-ios-card-squared-small
+        [imageSrc]="'/assets/images/ios-balloon.png'"
+        ></app-ios-card-squared-small>
+        <app-ios-card-squared-small
+        [imageSrc]="'/assets/images/ios-jellyfish.png'"
+        ></app-ios-card-squared-small>
+      </app-ios-scroll-horizontal>
+    </section>
+  </a>
+
+    <section id="ios-page-other-posts">
+      <app-ios-page-section [marginTop]="true">
+        <app-ios-page-group-title> Other posts </app-ios-page-group-title>
+        <app-ios-card-post-double-image></app-ios-card-post-double-image>
+        <app-ios-card-post-double-image></app-ios-card-post-double-image>
+        <app-ios-card-post-double-image></app-ios-card-post-double-image>
+      </app-ios-page-section>
+    </section>
+
+  </main>
+</ion-content>
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>xx</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title size="large">xx</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="1SocialHomeLight" style="width: 375px; height: 812px; position: relative; background: white">
+    <div class="Content" style="padding: 16px; left: 16px; top: 460px; position: absolute; background: white; border-radius: 14px; overflow: hidden; border: 1px #F2F2F7 solid; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+      <div class="Info" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <div class="TopContent" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: flex">
+          <div class="TopLine" style="width: 311px; height: 40px; position: relative">
+            <div class="Person" style="left: 0px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+              <img class="Avatar" style="width: 40px; height: 40px; border-radius: 9999px" src="https://via.placeholder.com/40x40" />
+              <div class="NameDate" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                <div class="CameronSteward" style="width: 173px; color: black; font-size: 15px; font-family: SF Pro Text; font-weight: 600; line-height: 20px; word-wrap: break-word">Cameron Steward</div>
+                <div class="Date" style="width: 173px; color: rgba(60, 60, 67, 0.60); font-size: 12px; font-family: SF Pro Text; font-weight: 300; line-height: 16px; word-wrap: break-word">2 hours ago</div>
+              </div>
+            </div>
+            <div class="Button" style="padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px; left: 249px; top: 4px; position: absolute; border-radius: 8px; overflow: hidden; border: 1px #007AFF solid; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+              <div class="Follow" style="color: #007AFF; font-size: 12px; font-family: SF Pro Text; font-weight: 600; line-height: 16px; word-wrap: break-word">Follow</div>
+            </div>
+          </div>
+          <div class="Description" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div class="ArchitectureRelax" style="width: 311px; color: #007AFF; font-size: 12px; font-family: SF Pro Text; font-weight: 600; line-height: 16px; word-wrap: break-word">#architecture, #relax</div>
+            <div class="SedAffertDelenitEaNamAtFerriFaceteInermisEumDictaFuissetPhaedrumEiEtAmetIuvaretVituperatoribusVix" style="width: 311px; color: black; font-size: 15px; font-family: SF Pro Text; font-weight: 300; line-height: 20px; word-wrap: break-word">Sed affert delenit ea. Nam at ferri facete inermis. Eum dicta fuisset phaedrum ei, et amet iuvaret vituperatoribus vix.</div>
+          </div>
+        </div>
+        <div class="Images" style="width: 311px; height: 148px; position: relative">
+          <img class="Img1" style="width: 148px; height: 148px; left: 0px; top: 0px; position: absolute; border-radius: 14px" src="https://via.placeholder.com/148x148" />
+          <img class="Img2" style="width: 148px; height: 148px; left: 163px; top: 0px; position: absolute; border-radius: 14px" src="https://via.placeholder.com/148x148" />
+        </div>
+      </div>
+    </div>
+    <div class="NavigationBarLightLargeSearch" style="width: 375px; height: 192px; left: 0px; top: 0px; position: absolute">
+      <div class="Background" style="width: 375px; height: 192px; left: 0px; top: 0px; position: absolute; background: rgba(249, 249, 249, 0.94); box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.30); backdrop-filter: blur(27.18px)"></div>
+      <div class="SearchFieldLight" style="width: 375px; height: 36px; left: 0px; top: 146px; position: absolute">
+        <div class="SearchField" style="width: 343px; height: 36px; left: 16px; top: 0px; position: absolute; background: rgba(118, 118, 128, 0.12); border-radius: 10px"></div>
+        <div class="IconSfSymbolsSearch" style="width: 24px; height: 24px; left: 22px; top: 7px; position: absolute">
+          <div class="Search" style="width: 15.63px; height: 15.78px; left: 4.18px; top: 3.98px; position: absolute; background: rgba(60, 60, 67, 0.60)"></div>
+        </div>
+        <div class="PlaceholderLabel" style="width: 297px; left: 46px; top: 7px; position: absolute; color: rgba(60, 60, 67, 0.60); font-size: 17px; font-family: SF Pro Text; font-weight: 300; line-height: 22px; word-wrap: break-word">Search</div>
+      </div>
+      <div class="NavigationBarComponentsLeftIcon" style="width: 188px; height: 44px; left: 0px; top: 44px; position: absolute">
+        <div class="IconNavToolbarAdd" style="width: 30px; height: 30px; left: 16px; top: 7px; position: absolute">
+          <img class="Icon" style="width: 18px; height: 18px; left: 6px; top: 6px; position: absolute" src="https://via.placeholder.com/18x18" />
+        </div>
+      </div>
+      <div class="NavigationBarComponentsRightBitmap" style="width: 128px; height: 44px; left: 247px; top: 88px; position: absolute">
+        <img class="Bitmap" style="width: 34px; height: 34px; left: 78px; top: 5px; position: absolute" src="https://via.placeholder.com/34x34" />
+      </div>
+      <div class="Title" style="width: 215px; left: 16px; top: 91px; position: absolute; color: black; font-size: 34px; font-family: SF Pro Display; font-weight: 700; line-height: 41px; letter-spacing: 0.37px; word-wrap: break-word">My posts</div>
+      <app-ios-page-title>My posts</app-ios-page-title>
+    </div>
+    <div class="SystemLightStatusBarDefault" style="width: 375px; height: 44px; left: 0px; top: 0px; position: absolute">
+      <div class="Time" style="width: 54px; left: 21px; top: 14px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: SF Pro Text; font-weight: 600; word-wrap: break-word">9:41</div>
+      <div class="Battery" style="width: 24.33px; height: 11.33px; left: 336.33px; top: 17.33px; position: absolute">
+        <div class="Border" style="width: 22px; height: 11.33px; left: 0px; top: 0px; position: absolute; opacity: 0.35; border-radius: 2.67px; border: 1px black solid"></div>
+        <div class="Cap" style="width: 1.33px; height: 4px; left: 23px; top: 3.67px; position: absolute; opacity: 0.40; background: black"></div>
+        <div class="Capacity" style="width: 18px; height: 7.33px; left: 2px; top: 2px; position: absolute; background: black; border-radius: 1.33px"></div>
+      </div>
+      <img class="Wifi" style="width: 15.33px; height: 11px; left: 316px; top: 17.33px; position: absolute" src="https://via.placeholder.com/15x11" />
+      <img class="CellularConnection" style="width: 17px; height: 10.67px; left: 294px; top: 17.67px; position: absolute" src="https://via.placeholder.com/17x11" />
+    </div>
+    <div class="MyPosts" style="width: 424px; height: 160px; left: 16px; top: 216px; position: absolute">
+      <div class="Image1" style="width: 200px; height: 160px; left: 0px; top: 0px; position: absolute">
+        <img class="Img" style="width: 200px; height: 160px; left: 0px; top: 0px; position: absolute; border-radius: 14px" src="https://via.placeholder.com/200x160" />
+        <div class="Amount" style="left: 126px; top: 19px; position: absolute; text-align: right; color: white; font-size: 13px; font-family: SF Pro Text; font-weight: 300; line-height: 18px; word-wrap: break-word">6473</div>
+        <div class="Title" style="width: 168px; left: 16px; top: 126px; position: absolute; color: white; font-size: 17px; font-family: SF Pro Text; font-weight: 600; line-height: 22px; word-wrap: break-word">Hot air balloon</div>
+        <div class="IconSfSymbolsHeartFilled" style="width: 24px; height: 24px; left: 164px; top: 16px; position: absolute">
+          <div style="width: 17.46px; height: 16.14px; left: 3.27px; top: 3.86px; position: absolute; background: white"></div>
+        </div>
+      </div>
+      <div class="Image2" style="width: 200px; height: 160px; left: 224px; top: 0px; position: absolute">
+        <img class="Img" style="width: 200px; height: 160px; left: 0px; top: 0px; position: absolute; border-radius: 14px" src="https://via.placeholder.com/200x160" />
+        <div class="Amount" style="left: 126px; top: 19px; position: absolute; text-align: right; color: white; font-size: 13px; font-family: SF Pro Text; font-weight: 300; line-height: 18px; word-wrap: break-word">7483</div>
+        <div class="Title" style="width: 168px; left: 16px; top: 126px; position: absolute; color: white; font-size: 17px; font-family: SF Pro Text; font-weight: 600; line-height: 22px; word-wrap: break-word">Jellyfish</div>
+        <div class="IconSfSymbolsHeartFilled" style="width: 24px; height: 24px; left: 164px; top: 16px; position: absolute">
+          <div style="width: 17.46px; height: 16.14px; left: 3.27px; top: 3.86px; position: absolute; background: white"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Title" style="width: 343px; left: 16px; top: 416px; position: absolute; color: black; font-size: 22px; font-family: SF Pro Display; font-weight: 700; line-height: 28px; letter-spacing: 0.80px; word-wrap: break-word">Other posts</div>
+    <div class="TabBarLight4Items" style="width: 375px; height: 83px; left: 0px; top: 729px; position: absolute">
+      <div class="Background" style="width: 375px; height: 83px; left: 0px; top: 83px; position: absolute; background: rgba(249, 249, 249, 0.94); box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.20) inset; backdrop-filter: blur(27.18px)"></div>
+      <div class="TabOne" style="width: 93px; height: 49px; left: 0px; top: 0px; position: absolute">
+        <div class="Label" style="width: 188px; left: -47px; top: 35px; position: absolute; text-align: center; color: #007AFF; font-size: 10px; font-family: SF Pro Text; font-weight: 500; line-height: 12px; letter-spacing: 0.16px; word-wrap: break-word">Home</div>
+        <div class="IconTabBarHome" style="width: 30px; height: 28px; left: 32px; top: 5px; position: absolute">
+          <div style="left: 5px; top: 2px; position: absolute; text-align: center; color: #007AFF; font-size: 20px; font-family: SF Pro Display; font-weight: 300; line-height: 24px; letter-spacing: 0.38px; word-wrap: break-word">􀎟</div>
+        </div>
+      </div>
+      <div class="TabTwo" style="width: 93px; height: 49px; left: 94px; top: 0px; position: absolute">
+        <div class="Label" style="width: 188px; left: -47px; top: 35px; position: absolute; text-align: center; color: #8E8E93; font-size: 10px; font-family: SF Pro Text; font-weight: 500; line-height: 12px; letter-spacing: 0.16px; word-wrap: break-word">Chat</div>
+        <div class="IconTabBarMessage" style="width: 30px; height: 28px; left: 32px; top: 5px; position: absolute">
+          <div style="left: 5px; top: 2px; position: absolute; text-align: center; color: #AEAEB2; font-size: 20px; font-family: SF Pro Display; font-weight: 300; line-height: 24px; letter-spacing: 0.38px; word-wrap: break-word">􀌥</div>
+        </div>
+      </div>
+      <div class="TabThree" style="width: 93px; height: 49px; left: 188px; top: 0px; position: absolute">
+        <div class="Label" style="width: 188px; left: -47px; top: 35px; position: absolute; text-align: center; color: #8E8E93; font-size: 10px; font-family: SF Pro Text; font-weight: 500; line-height: 12px; letter-spacing: 0.16px; word-wrap: break-word">Friends</div>
+        <div class="IconTabBarPerson2" style="width: 30px; height: 28px; left: 32px; top: 5px; position: absolute">
+          <div style="left: 5px; top: 2px; position: absolute; text-align: center; color: #AEAEB2; font-size: 20px; font-family: SF Pro Display; font-weight: 300; line-height: 24px; letter-spacing: 0.38px; word-wrap: break-word">􀉬</div>
+        </div>
+      </div>
+      <div class="TabFour" style="width: 93px; height: 49px; left: 282px; top: 0px; position: absolute">
+        <div class="Label" style="width: 188px; left: -47px; top: 35px; position: absolute; text-align: center; color: #8E8E93; font-size: 10px; font-family: SF Pro Text; font-weight: 500; line-height: 12px; letter-spacing: 0.16px; word-wrap: break-word">Stories</div>
+        <div class="IconTabBarBookmark" style="width: 30px; height: 28px; left: 32px; top: 5px; position: absolute">
+          <div style="left: 5px; top: 2px; position: absolute; text-align: center; color: #AEAEB2; font-size: 20px; font-family: SF Pro Display; font-weight: 300; line-height: 24px; letter-spacing: 0.38px; word-wrap: break-word">􀉟</div>
+        </div>
+      </div>
+    </div>
+    <div class="SystemLightHomeIndicator" style="width: 375px; height: 34px; left: 0px; top: 778px; position: absolute">
+      <div class="HomeIndicator" style="width: 134px; height: 5px; left: 121px; top: 21px; position: absolute; background: black; border-radius: 100px"></div>
+    </div>
+  </div>
+</ion-content>
+-->

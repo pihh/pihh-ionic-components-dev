@@ -22,6 +22,18 @@ import { SmallComponent } from './text/small/small.component';
 import { DateTimeAgoComponent } from './date/date-time-ago/date-time-ago.component';
 import { DateComponent } from './date/date/date.component';
 import { ImageBackgroundExpandComponent } from './images/image-background-expand/image-background-expand.component';
+import { IosPageGroupTitleComponent } from './ios/ios-page-group-title/ios-page-group-title.component';
+import { IosPageTitleComponent } from './ios/ios-page-title/ios-page-title.component';
+import { IosNavigationLargeSearchComponent } from './ios/ios-navigation-large-search/ios-navigation-large-search.component';
+import { IosCardSquaredSmallComponent } from './ios/ios-card-squared-small/ios-card-squared-small.component';
+import { IosScrollHorizontalComponent } from './ios/ios-scroll-horizontal/ios-scroll-horizontal.component';
+import { IosPageSectionComponent } from './ios/ios-page-section/ios-page-section.component';
+import { IosCardPostDoubleImageComponent } from './ios/ios-card-post-double-image/ios-card-post-double-image.component';
+import { RouterModule } from '@angular/router';
+import { IosNavigationModalComponent } from './ios/ios-navigation-modal/ios-navigation-modal.component';
+import { IosPostStatsComponent } from './ios/ios-post-stats/ios-post-stats.component';
+import { IosCommentSectionComponent } from './ios/ios-comment-section/ios-comment-section.component';
+import { IosCommentComponent } from './ios/ios-comment/ios-comment.component';
 
 const declarations:any[] = [
   // Icons
@@ -61,6 +73,20 @@ const declarations:any[] = [
   ImageExpandComponent,
   ImageBackgroundExpandComponent,
 
+  // Ios
+  IosPageTitleComponent,
+  IosPageGroupTitleComponent,
+  IosNavigationLargeSearchComponent,
+  IosCardSquaredSmallComponent,
+  IosCardPostDoubleImageComponent,
+  IosScrollHorizontalComponent,
+  IosPageSectionComponent,
+  IosNavigationModalComponent,
+  IosPostStatsComponent,
+  IosCommentSectionComponent,
+  IosCommentComponent,
+
+
   // Uncategorized
   SearchbarComponent,
   RefresherComponent
@@ -72,7 +98,8 @@ const exports:any[] = declarations;
   exports:declarations,
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }

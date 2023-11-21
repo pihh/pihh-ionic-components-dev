@@ -25,3 +25,10 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 @import "./theme/ionic.scss";
+
+
+
+
+.pc-IosCommentSection app-ios-comment:last-of-type .pc-CommentDivider .pc-Divider{
+  border-bottom: none;
+}

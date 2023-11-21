@@ -1,0 +1,139 @@
+.pc-CardPostDoubleImageContent {
+  padding: 16px;
+
+  background: var(--ion-background-color);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px #f2f2f7 solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  margin-top: 1rem;
+}
+.pc-CardPostDoubleImageInfo {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+}
+.pc-CardPostDoubleImageTopContent {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.pc-CardPostDoubleImageTopLine {
+  // width: 311px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.pc-CardPostDoubleImagePerson {
+  // left: 0px;
+  // top: 0px;
+  // position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+}
+.pc-CardPostDoubleImageAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+}
+.pc-CardPostDoubleImageNameDate {
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: center;
+  // gap: 2px;
+  // display: inline-flex;
+  flex: 1;
+    width: 100%;
+}
+.pc-CardPostDoubleImageCameronSteward {
+  // width: 173px;
+  color: var(--ion-text-color);
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.pc-CardPostDoubleImageDate {
+  // width: 173px;
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 12px;
+  font-family: "SF Pro Text";
+  font-weight: 300;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.pc-CardPostDoubleImageButton {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  // left: 249px;
+  // top: 4px;
+  // position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px #007aff solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+.pc-CardPostDoubleImageFollow {
+  color: #007aff;
+  font-size: 12px;
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.pc-CardPostDoubleImageDescription {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+.pc-CardPostDoubleImageArchitectureRelax {
+  // width: 311px;
+  color: #007aff;
+  font-size: 12px;
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+.pc-CardPostDoubleImageSedAffer {
+  // width: 311px;
+  color: var(--ion-text-color);
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  font-weight: 300;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.pc-CardPostDoubleImageImages {
+
+  gap: 1rem;
+  display: inline-flex;
+
+}
+.pc-CardPostDoubleImageImg {
+  width: 50%;
+
+  border-radius: 14px;
+  aspect-ratio: 1/1;
+}

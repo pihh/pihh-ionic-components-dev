@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Hot air ballon </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon
+          style="height: 24px"
+          slot="icon-only"
+          name="ellipsis-horizontal"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="2SocialCommentsLight">
+    <div
+      class="Image1 ion-padding"
+      style="
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+      "
+    >
+      <img
+        class="Img"
+        style="width: 100%; height: 100%; border-radius: 14px"
+        src="/assets/images/ios-balloon.png"
+      />
+    </div>
+    <app-ios-post-stats></app-ios-post-stats>
+  </div>
+
+  <app-ios-page-section [marginTop]="true">
+    <app-ios-page-group-title> Comments </app-ios-page-group-title>
+
+  </app-ios-page-section>
+
+  <app-ios-page-section [marginTop]="true">
+    <app-ios-comment-section>
+
+      <app-ios-comment></app-ios-comment>
+      <app-ios-comment></app-ios-comment>
+      <app-ios-comment></app-ios-comment>
+      <app-ios-comment></app-ios-comment>
+    </app-ios-comment-section>
+  </app-ios-page-section>
+
+</ion-content>

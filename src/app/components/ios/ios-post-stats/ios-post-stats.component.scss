@@ -1,0 +1,25 @@
+
+ion-header {
+
+  ion-toolbar {
+    padding: 0 1em;
+    ion-buttons {
+      ion-button {
+        ion-icon {
+          color: rgba(60, 60, 67, 0.6);
+          font-size: 24px;
+        }
+        span {
+          color: rgba(60, 60, 67, 0.6);
+          font-size: 12px;
+          font-family: "SF Pro Text";
+        }
+
+        > * {
+          display: block;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,8 @@
   src: url("../assets/fonts/DMSans-VariableFont_opsz,wght.ttf"); //change url accordingly
 }
 
+@import '../assets/fonts/fonts.css';
+@import '../app/components/ios/styles.scss';
 :root {
   --ion-font-family: "DM Sans";
   /** animations **/

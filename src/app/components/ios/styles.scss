@@ -1,0 +1,20 @@
+.pc-IosSection{
+  height: 44px;
+}
+.pc-IosSectionFlex{
+  padding: 0 16px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pc-IosRounded{
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.pc-IosSectionSticky{
+  position: sticky;
+  top: 0;
+}

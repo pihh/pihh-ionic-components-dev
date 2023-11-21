@@ -29,6 +29,14 @@ const routes: Routes = [
   {
     path: 'event',
     loadChildren: () => import('./pages/event/event.module').then( m => m.EventPageModule)
+  },
+  {
+    path: 'ios-home',
+    loadChildren: () => import('./pages/ios-home/ios-home.module').then( m => m.IosHomePageModule)
+  },
+  {
+    path: 'ios-post',
+    loadChildren: () => import('./pages/ios-post/ios-post.module').then( m => m.IosPostPageModule)
   }
 ];
 @NgModule({

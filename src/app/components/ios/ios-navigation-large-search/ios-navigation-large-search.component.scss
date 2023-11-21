@@ -1,0 +1,83 @@
+.pc-NavigationBarLightLargeSearch{
+  min-width: 375px;
+  min-height: 192px;
+  width: 100%;
+  position: sticky;
+  top: -80px;
+  z-index: 1;
+  ion-icon{
+    color: #007aff !important
+  }
+  .pc-Background{
+    min-width: 375px;
+    min-height: 192px;
+    width: 100%;
+    background: rgba(249, 249, 249, 0.94);
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(27.18px);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1
+  }
+  .pc-SearchFieldLight{
+    min-width: 375px;
+    min-height: 36px;
+    // left: 0px; top: 146px; // position: absolute
+  }
+  .pc-Title{
+    // width: 215px;
+    // left: 16px;
+    // top: 91px;
+    // position: absolute;
+    color: var(--ion-text-color);
+    font-size: 34px;
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.37px;
+    word-wrap: break-word
+  }
+  .pc-NavigationBarComponentsLeftIcon {
+    width: 188px;
+    height: 44px;
+    left: 0px;
+    top: 44px;
+    // position: absolute;
+    .pc-IconNavToolbarAdd{
+      width: 30px;
+      height: 30px;
+      left: 16px;
+      top: 7px;
+      // position: absolute;
+      .pc-Icon{
+        width: 18px;
+        height: 18px;
+        left: 6px;
+        top: 6px;
+        // position: absolute
+      }
+    }
+  }
+  .pc-NavigationBarComponentsRightBitmap{
+    // width: 128px;
+    height: 44px;
+    // left: 247px;
+    // top: 88px;
+    // position: absolute;
+    padding-top: 6px;
+    .pc-Bitmap{
+      width: 34px;
+      height: 34px;
+      // left: 78px;
+      // top: 5px;
+      // position: absolute
+    }
+  }
+}
+
+
+/**
+31 -> 26
+fonts are scaled 1.2 times
+*/

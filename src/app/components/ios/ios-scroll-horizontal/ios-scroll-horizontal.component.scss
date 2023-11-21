@@ -1,0 +1,19 @@
+$cardHeight: 42.5vw;
+.pc-IosScrollHorizontal{
+  // width: 424px; height: 160px; left: 16px; top: 216px; position: absolute
+  // width: 200px;
+  min-height: $cardHeight;
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-top:24px;
+  padding-bottom:24px;
+  display: inline-flex;
+  gap: 1rem;
+
+  width: 100%;
+
+  &::before, &::after{
+  content: "";
+  }
+
+}
