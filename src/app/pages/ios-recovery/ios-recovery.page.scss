@@ -1,0 +1,28 @@
+.pc-IosAuthTitle{
+  margin-top: 35px;
+  text-align:center;
+
+}
+
+.pc-IosAuthAction{
+  position:absolute;
+  bottom: 44px;
+  width: calc(100% - 2em);
+  text-align:center;
+}
+
+.pc-IosAuthLogo{
+  margin-top: 92px;
+  text-align:center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-IosAuthForm{
+  ion-list{
+    margin-left: -6px;
+  }
+}
+
+ion-content {--overflow: hidden}

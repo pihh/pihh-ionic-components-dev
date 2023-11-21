@@ -34,6 +34,8 @@ import { IosNavigationModalComponent } from './ios/ios-navigation-modal/ios-navi
 import { IosPostStatsComponent } from './ios/ios-post-stats/ios-post-stats.component';
 import { IosCommentSectionComponent } from './ios/ios-comment-section/ios-comment-section.component';
 import { IosCommentComponent } from './ios/ios-comment/ios-comment.component';
+import { InputPasswordComponent } from './inputs/input-password/input-password.component';
+import { InputForgotComponent } from './inputs/input-forgot/input-forgot.component';
 
 const declarations:any[] = [
   // Icons
@@ -72,6 +74,10 @@ const declarations:any[] = [
   // Images
   ImageExpandComponent,
   ImageBackgroundExpandComponent,
+
+  // Inputs
+  InputPasswordComponent,
+  InputForgotComponent,
 
   // Ios
   IosPageTitleComponent,

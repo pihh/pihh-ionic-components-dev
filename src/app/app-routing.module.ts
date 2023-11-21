@@ -37,6 +37,14 @@ const routes: Routes = [
   {
     path: 'ios-post',
     loadChildren: () => import('./pages/ios-post/ios-post.module').then( m => m.IosPostPageModule)
+  },
+  {
+    path: 'ios-auth',
+    loadChildren: () => import('./pages/ios-auth/ios-auth.module').then( m => m.IosAuthPageModule)
+  },
+  {
+    path: 'ios-recovery',
+    loadChildren: () => import('./pages/ios-recovery/ios-recovery.module').then( m => m.IosRecoveryPageModule)
   }
 ];
 @NgModule({

@@ -1,4 +1,3 @@
-
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -10,12 +9,13 @@
   <ion-toolbar>
     <ion-title size="large">My posts</ion-title>
     <ion-buttons slot="end">
-      <ion-button>
-        <ion-avatar style="width: 34px;
-        height: 34px;">
-          <img src="/assets/images/ios-profile-picture.png" />
-        </ion-avatar>
-      </ion-button>
+      <a routerLink="/tabs/tab1">
+        <ion-button>
+          <ion-avatar style="width: 34px; height: 34px">
+            <img src="/assets/images/ios-profile-picture.png" />
+          </ion-avatar>
+        </ion-button>
+      </a>
     </ion-buttons>
   </ion-toolbar>
   <ion-toolbar>
@@ -23,7 +23,6 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-
   <!-- <app-ios-navigation-large-search>
     <div id="progress"></div>
   </app-ios-navigation-large-search> -->
@@ -31,34 +30,34 @@
   <!-- </section> -->
   <main>
     <a routerLink="/ios-post">
-
       <section id="ios-page-user-posts">
         <app-ios-scroll-horizontal>
           <app-ios-card-squared-small
-          [imageSrc]="'/assets/images/ios-balloon.png'"
+            [imageSrc]="'/assets/images/ios-balloon.png'"
           ></app-ios-card-squared-small>
           <app-ios-card-squared-small
-          [imageSrc]="'/assets/images/ios-jellyfish.png'"
-        ></app-ios-card-squared-small>
-        <app-ios-card-squared-small
-        [imageSrc]="'/assets/images/ios-balloon.png'"
-        ></app-ios-card-squared-small>
-        <app-ios-card-squared-small
-        [imageSrc]="'/assets/images/ios-jellyfish.png'"
-        ></app-ios-card-squared-small>
-      </app-ios-scroll-horizontal>
-    </section>
-  </a>
+            [imageSrc]="'/assets/images/ios-jellyfish.png'"
+          ></app-ios-card-squared-small>
+          <app-ios-card-squared-small
+            [imageSrc]="'/assets/images/ios-balloon.png'"
+          ></app-ios-card-squared-small>
+          <app-ios-card-squared-small
+            [imageSrc]="'/assets/images/ios-jellyfish.png'"
+          ></app-ios-card-squared-small>
+        </app-ios-scroll-horizontal>
+      </section>
+    </a>
 
     <section id="ios-page-other-posts">
-      <app-ios-page-section [marginTop]="true">
-        <app-ios-page-group-title> Other posts </app-ios-page-group-title>
-        <app-ios-card-post-double-image></app-ios-card-post-double-image>
-        <app-ios-card-post-double-image></app-ios-card-post-double-image>
-        <app-ios-card-post-double-image></app-ios-card-post-double-image>
-      </app-ios-page-section>
+      <a routerLink="/ios-auth">
+        <app-ios-page-section [marginTop]="true">
+          <app-ios-page-group-title> Other posts </app-ios-page-group-title>
+          <app-ios-card-post-double-image></app-ios-card-post-double-image>
+          <app-ios-card-post-double-image></app-ios-card-post-double-image>
+          <app-ios-card-post-double-image></app-ios-card-post-double-image>
+        </app-ios-page-section>
+      </a>
     </section>
-
   </main>
 </ion-content>
 <!--

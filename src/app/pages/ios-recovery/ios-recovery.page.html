@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Password reset </ion-title>
+    <ion-buttons slot="end">
+      <!-- <ion-button>
+        <ion-icon
+          style="height: 24px"
+          slot="icon-only"
+          name="ellipsis-horizontal"
+        ></ion-icon>
+      </ion-button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <section class="pc-IosAuthLogo">
+    <ion-avatar>
+      <img src="/assets/icon/favicon.svg" />
+    </ion-avatar>
+  </section>
+
+  <section class="pc-IosAuthTitle">
+    <app-ios-page-title>Forgot password?</app-ios-page-title>
+    <p class="pc-IosParagraph">
+      Mel ea numquam efficiendi appellantur, eu vix reque inermis propriae, animal scaevola.
+    </p>
+  </section>
+
+  <section class="pc-IosAuthForm">
+    <ion-list>
+      <ion-item>
+        <ion-input
+          label="Email"
+          labelPlacement="floating"
+          placeholder=""
+          type="email"
+        ></ion-input>
+      </ion-item>
+
+
+    </ion-list>
+  </section>
+
+  <section class="pc-IosAuthAction">
+    <ion-button expand="block">Continue</ion-button>
+    <p class="pc-IosParagraph" style="font-size: 12px; font-family: SFProText; font-weight: 400; line-height: 20px; word-wrap: break-word">
+      Don't have an account? <a routerLink="/ios-auth">Create account.</a>
+    </p>
+  </section>
+</ion-content>

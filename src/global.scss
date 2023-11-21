@@ -26,9 +26,21 @@
 @import "@ionic/angular/css/flex-utils.css";
 @import "./theme/ionic.scss";
 
-
-
-
-.pc-IosCommentSection app-ios-comment:last-of-type .pc-CommentDivider .pc-Divider{
+.pc-IosCommentSection
+  app-ios-comment:last-of-type
+  .pc-CommentDivider
+  .pc-Divider {
   border-bottom: none;
+}
+.pc-IosParagraph {
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  font-weight: 200;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+a{
+  text-decoration: none
 }
